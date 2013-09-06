@@ -7,8 +7,6 @@
   {
     "express": "*",
     "jade" : "*",
-    "poet" : "*",
-    "mega" : "*",
-    "zipper" : "*"
+    "poet" : "*"
   }
 }

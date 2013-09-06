@@ -1,9 +1,7 @@
 var
   express = require('express'),
   app = express(),
-  Poet = require('poet'),
-  Mega = require('mega'),
-  fs = require('fs');
+  Poet = require('poet');
 
 var poet = Poet(app, {
   postsPerPage: 5,

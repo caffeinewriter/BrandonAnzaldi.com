@@ -1,0 +1,13 @@
+.pagination(style="text-align:center;")
+  p(style="font-weight:700;") Pages
+  - var i = 1;
+  - var pageCount = getPageCount();
+  - while ( i <= pageCount )
+    if page == i
+      li.secondary.badge(class='active')
+        a(href=pageURL(i)) #{i}
+      &#32;
+    else
+      li.primary.badge
+        a(href=pageURL(i)) #{i}
+    - i++;

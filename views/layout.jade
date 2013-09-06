@@ -1,0 +1,67 @@
+!!!
+html 
+  head
+    title Brandon Anzaldi
+    meta(charset='utf-8')
+    link(rel='alternate', type='application/rss+xml', title='RSS', href="/rss")
+    link(rel='stylesheet', href='/css/gumby.css')
+    link(rel='stylesheet', href='/css/style.css')
+    link(rel='stylesheet', href='/css/zenburnesque.css')
+    script(src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js")
+    script(src="/js/gumby.min.js")
+    script(src="/js/plugins.js")
+    script(src="/js/main.js")
+    script(src="/js/rainbow.min.js")
+  body
+    .navbar(gumby-fixed="top")
+      .row
+        a.toggle(href="#")
+          .icon-menu
+        h3.four.columns.logo
+          a(href="/") Brandon Anzaldi
+        ul.eight.columns
+          //- li
+            //- a(href="/about") About
+    .row
+      .eight.columns
+        block content
+      .four.columns
+        .row
+          .twelve.columns.image.photo
+            img(src="/images/brandon.jpg")
+          .twelve.columns
+            p Brandon is a programmer, filmmaker, freelancer, student, entrepreneur, and more.
+        .row
+          .twelve.columns
+            .pill.tabs
+              ul.tab-nav
+                li
+                  a(href="https://twitter.com/caffeinewriter")
+                    i.icon-twitter
+                li
+                  a(href="https://github.com/caffeinewriter")
+                    i.icon-github
+                li
+                  a(href="https://gittip.com/caffeinewriter")
+                    i.icon-heart
+                li
+                  a(href="/rss")
+                    i.icon-rss
+        br
+        .row
+          .six.columns
+            .medium.primary.btn
+              a(href="#") Categories
+              div.dropdown
+                ul
+                  - each cat in getCategories()
+                    li
+                      a(href=categoryURL(cat)) #{cat}
+          .five.columns
+            .medium.secondary.btn
+              a(href="#") Tags
+              div.dropdown
+                ul
+                  - each tag in getTags()
+                    li
+                      a(href=tagURL(tag)) #{tag}

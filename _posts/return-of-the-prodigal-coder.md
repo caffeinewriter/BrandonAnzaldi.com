@@ -2,7 +2,7 @@
     "title"    : "Return of the Prodigal Coder",
     "tags"     : [ "introspection", "musings" ],
     "category" : "brandon",
-    "date"     : "9-6-2013"
+    "date"     : "9-5-2013"
 }}}
 
 I told myself a lot of things. "I'll set up my blog again when [Ghost](http://tryghost.org/) comes out," was near the top of that list. Then I realized that I needed my creative outlet. Sure, I could write for myself, but where's the excitement when you know that nobody is going to see that set of words but you. <!--more--->So I sat down, and I learned about the beautiful platform that is [Poet](http://jsantell.github.io/poet/), and built my own thing out of it. Is it perfect? No. Is it mine? Enough for me to be happy about it.

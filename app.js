@@ -38,6 +38,8 @@ poet.watch(function () {
   }
 });
 
+var port = app.env.PORT || 3000;
+
 app.set('view engine', 'jade');
 app.set('views', __dirname + '/views');
 app.use(express.static(__dirname + '/public'));
@@ -59,4 +61,4 @@ app.get('/rss', function (req, res) {
   res.render('rss', { posts: posts });
 });
 
-app.listen(3000);
+app.listen(port);

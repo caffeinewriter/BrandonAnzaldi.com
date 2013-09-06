@@ -1,19 +1,14 @@
 var
   express = require('express'),
   app = express(),
-  Poet = require('poet');
-
-var readMoreButton = function readMoreLink(post) {
-  var anchor = '<div class="medium primary button"><a href="' + post.url + '"';
-  anchor += ' title="Read more of ' + post.title + '">read more</a></div>';
-  return '<p>' + anchor + '</p>';
-}
+  Poet = require('poet'),
+  Mega = require('mega'),
+  fs = require('fs');
 
 var poet = Poet(app, {
   postsPerPage: 5,
   posts: './_posts',
   metaFormat: 'json',
-  readMoreLink: readMoreButton,
   routes: {
     '/blog/:post': 'post',
     '/page/:page': 'page',
@@ -23,19 +18,9 @@ var poet = Poet(app, {
 });
 
 poet.watch(function () {
-  // watcher reload
-  var readMoreButton = function readMoreLink(post) {
-    var anchor = '<div class="medium primary button"><a href="' + post.url + '"';
-    anchor += ' title="Read more of ' + post.title + '">read more</a></div>';
-    return '<p>' + anchor + '</p>';
-  }
+    // watcher reload
 }).init().then(function () {
   // initialized
-  var readMoreButton = function readMoreLink(post) {
-    var anchor = '<div class="medium primary button"><a href="' + post.url + '"';
-    anchor += ' title="Read more of ' + post.title + '">read more</a></div>';
-    return '<p>' + anchor + '</p>';
-  }
 });
 
 var port = process.env.PORT || 3000;

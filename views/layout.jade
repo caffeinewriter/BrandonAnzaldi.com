@@ -7,6 +7,7 @@ html
     link(rel='stylesheet', href='/css/gumby.css')
     link(rel='stylesheet', href='/css/style.css')
     link(rel='stylesheet', href='/css/zenburnesque.css')
+    link(rel='stylesheet', href='/css/sprite.css')
     script(src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js")
     script(src="/js/gumby.min.js")
     script(src="/js/plugins.js")
@@ -17,7 +18,7 @@ html
       .row
         a.toggle(href="#")
           .icon-menu
-        h3.four.columns.logo
+        h3.six.columns.logo(style="color:white !important;")
           a(href="/") Brandon Anzaldi
         ul.six.columns
           //- li
@@ -35,20 +36,19 @@ html
             p Brandon is a programmer, filmmaker, freelancer, student, entrepreneur, and more.
         .row
           .twelve.columns
-            .pill.tabs
-              ul.tab-nav
-                li
-                  a(href="https://twitter.com/caffeinewriter")
-                    i.icon-twitter
-                li
-                  a(href="https://github.com/caffeinewriter")
-                    i.icon-github
-                li
-                  a(href="https://gittip.com/caffeinewriter")
-                    i.icon-heart
-                li
-                  a(href="/rss")
-                    i.icon-rss
+            .row
+              .two.columns
+                a(href="https://twitter.com/caffeinewriter")
+                  i.sprite.sprite-twitter
+              .two.columns
+                a(href="https://github.com/caffeinewriter")
+                  i.sprite.sprite-github
+              .two.columns
+                a(href="/rss")
+                  i.sprite.sprite-rss
+              .four.columns
+              .two.columns
+                script(data-gittip-username='caffeinewriter', data-gittip-widget='button', src='//gttp.co/v1.js')
         br
         .row
           .six.columns

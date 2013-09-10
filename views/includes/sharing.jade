@@ -1,6 +1,12 @@
 .columns.five
-
-  a.twitter-share-button(href='https://twitter.com/share', data-lang='en', data-count="horizontalj", data-text=post.title) Tweet
-    script.
-      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-  a.default.small.pretty.btn(href='http://news.ycombinator.com/submitlink?u=' + 'http://brandonanzaldi.com' + post.url + '&t=' + post.title) &#32;Share To HN&#32;
+a.hn-share-button(href="http://news.ycombinator.com/submit", data-title=post.title, data-url=post.url) Vote on HN
+script.
+  (function(d, t) {
+    var g = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+        g.src = '//hnbutton.appspot.com/static/hn.min.js';
+        s.parentNode.insertBefore(g, s);
+  }(document, 'script'));
+a.twitter-share-button(href='https://twitter.com/share', data-lang='en', data-count="horizontalj", data-text=post.title) Tweet
+script.
+  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");

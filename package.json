@@ -1,10 +1,6 @@
 {
   "name": "BrandonAnzaldi",
   "version": "0.0.1",
-  "engines": {
-    "node": "*",
-    "npm": "*"
-    },
   "private" : true,
   "dependencies":
   {

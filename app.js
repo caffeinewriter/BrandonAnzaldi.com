@@ -30,6 +30,8 @@ app.use(app.routes);
 
 app.get('/', function (req, res) { res.render('index');});
 
+app.get('/donate', function (req, res) { res.render('donate');})
+
 app.get('/sitemap.xml', function (req, res) {
   var postCount = poet.helpers.getPostCount();
   var posts = poet.helpers.getPosts(0, postCount);

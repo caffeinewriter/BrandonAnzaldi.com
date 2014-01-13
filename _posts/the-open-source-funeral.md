@@ -4,15 +4,19 @@
 It's been far too long since I've written a blog post. The year's even changed
 since my last one, though I suppose the same could be said for one written mere
 minutes away from the mark of midnight, but I digress. Today, I'm looking at a
-concept I'm calling the Open Source Funeral. This post was sparked by one of the
-most tragic events the world has ever seen. The loss of the brilliant Aaron
-Swartz, who took his own life just over a year ago. However, his death isn't the
-real catalyst for this post, but rather the online memorial to him that came
-afterwards. This memorial was remarkable. It wasn't a select few people speaking
-in an ephemeral context about a great man, this was hundreds, perhaps thousands
-of people, modifying this site. Adding their memories, their experiences, the
-experiences they wished they'd had to a beautiful forum bidding adieu to one of
-the greatest minds the world has ever seen.
+concept I'm calling the Open Source Funeral.
+
+\<!--more--\>
+
+This post was sparked by one of the most tragic events the world has ever seen.
+The loss of the brilliant Aaron Swartz, who took his own life just over a year
+ago. However, his death isn't the real catalyst for this post, but rather the
+online memorial to him that came afterwards. This memorial was remarkable. It
+wasn't a select few people speaking in an ephemeral context about a great man,
+this was hundreds, perhaps thousands of people, modifying this site. Adding
+their memories, their experiences, the experiences they wished they'd had to a
+beautiful forum bidding adieu to one of the greatest minds the world has ever
+seen.
 
 The thing about this is that everyone could attend, since it was all online,
 anybody could speak, thought that could be detrimental, but with the moderation,

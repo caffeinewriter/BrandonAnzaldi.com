@@ -6,7 +6,7 @@ since my last one, though I suppose the same could be said for one written mere
 minutes away from the mark of midnight, but I digress. Today, I'm looking at a
 concept I'm calling the Open Source Funeral.
 
-\<!--more--\>
+<!--more-->
 
 This post was sparked by one of the most tragic events the world has ever seen.
 The loss of the brilliant Aaron Swartz, who took his own life just over a year

@@ -1,7 +1,9 @@
 var
   express = require('express'),
   app = express(),
-  Poet = require('poet');
+  request = require('request'),
+  Poet = require('poet'),
+  difficulty;
 
 var poet = Poet(app, {
   postsPerPage: 5,
@@ -30,7 +32,12 @@ app.use(app.routes);
 
 app.get('/', function (req, res) { res.render('index'); });
 
-app.get('/omc', function (req, res) { res.render('omc'); });
+app.get('/omc', function (req, res) {
+request({uri: 'http://omc.chains.doctor-blue.net/chain/Omnicoin/q/getdifficulty'}, function(err, resp, body) {
+    res.render('omc', { difficulty: body });
+  });
+  //res.render('omc', { difficulty: difficulty }); 
+});
 
 app.get('/donate', function (req, res) { res.render('donate'); })
 

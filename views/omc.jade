@@ -1,13 +1,14 @@
 extends layout
 
 block content
+
 	script(type="text/javascript").
 		var diff,
 			hrate,
 			coinsPerYear,
 			htime,
 			blocksPerYear,
-			bcoins = 1000.0;		
+			bcoins = 1000.0;
 			var calculateOmc = function() {
 			diff = document.getElementById("diff").value;
 			hrate= document.getElementById("hrate").value;
@@ -33,7 +34,7 @@ block content
 			td
 				label(for="diff") Difficulty:
 			td
-				input(type="text", name="diff")#diff
+				input(type="text", name="diff", value!=difficulty)#diff
 		tr
 			td
 				label(for="hrate") Hash Rate (KH/s):

@@ -18,7 +18,7 @@ block content
 			document.getElementById("cpm").value = (coinsPerYear / 12).toFixed(8);
 			document.getElementById("cpy").value = coinsPerYear.toFixed(8);
 		};
-	h1 Omnicoin Calculator
+	h2 Omnicoin Calculator
 	p.
 		This calculator is provided free of charge to gain a rough approximation 
 		of how many Omnicoins you can earn within a given time period. This is 
@@ -40,7 +40,8 @@ block content
 				input(type="text", name="hrate")#hrate
 		tr
 			td
-				input(type="button", value="Submit", onClick="calculateOmc()")
+				div.medium.primary.button
+					a(href="#", onClick="calculateOmc()") Calculate
 			td
 				.empty
 	hr

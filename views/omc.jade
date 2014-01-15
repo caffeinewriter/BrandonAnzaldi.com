@@ -23,9 +23,10 @@ block content
 		This calculator is provided free of charge to gain a rough approximation 
 		of how many Omnicoins you can earn within a given time period. This is 
 		an estimation, and requires the current difficulty to function. This can 
-		be obtained from typing <kbd>getinfo</kbd> into the debug console (Help 
-		-&gt; Debug Window -&gt; Console) and inputting the value for "difficulty", 
-		or even from the statistic page of a pool.
+		be obtained from typing <kbd>getinfo</kbd> into the debug console of 
+		Omnicoin-qt (Help -&gt; Debug Window -&gt; Console) and inputting the 
+		value for the returned "difficulty", or even from the statistic page of 
+		a pool.
 	br
 	table
 		tr
@@ -39,7 +40,8 @@ block content
 			td
 				input(type="text", name="hrate")#hrate
 	div.medium.primary.btn
-		a(href="#", onClick="calculateOmc();return(false);") Calculate
+		a(href="#", onClick="calculateOmc();return(false);") Calculate 
+		//- TODO: Action Hooks via jQuery
 	hr
 	table
 		tr

@@ -8,7 +8,7 @@ block content
 			htime,
 			blocksPerYear,
 			bcoins = 1000.0;		
-			var calculateOmc = function(diff, hrate, pcomp, prate) {
+			var calculateOmc = function() {
 			diff = document.getElementById("diff").value;
 			hrate= document.getElementById("hrate").value;
 			htime = diff * (Math.pow(2.0, 32) / (hrate * 1000.0));

@@ -28,9 +28,11 @@ app.set('views', __dirname + '/views');
 app.use(express.static(__dirname + '/public'));
 app.use(app.routes);
 
-app.get('/', function (req, res) { res.render('index');});
+app.get('/', function (req, res) { res.render('index'); });
 
-app.get('/donate', function (req, res) { res.render('donate');})
+app.get('/omc', function (req, res) { res.render('omc'); });
+
+app.get('/donate', function (req, res) { res.render('donate'); })
 
 app.get('/sitemap.xml', function (req, res) {
   var postCount = poet.helpers.getPostCount();
